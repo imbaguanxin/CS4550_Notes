@@ -101,6 +101,8 @@
 
   Operate MongoDB with [manual](https://docs.mongodb.com/manual/)
 
-  **Start a Mongo Server**: `mongod --dbpath={your db path} --port={your port usually 27100}` example: `mongod --dbpath=C:\mongodb\db --port=27100`
+  **Start a Mongo Server**: 
+  
+  `mongod --dbpath={your db path} --port={your port usually 27100}` __example__: `mongod --dbpath=C:\mongodb\db --port=27100`
 
   **Connect to MongoDB**: `mongo --port=...`
