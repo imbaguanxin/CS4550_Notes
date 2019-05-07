@@ -9,8 +9,11 @@
   Go to [Maven Official website](http://maven.apache.org/download.cgi) download an binary archive and add to `PATH`
   1. On Windows:
     - View advanced system settings (through search or control panel)
+
     - Go to Advanced tab and click on Environment Variables
+
     - Find `Path`, click on **edit**, then click on **New**.
+
     - add the `bin` directory to the path. Path example: `C:\Program Files\apache-maven-3.6.0\bin`
 
     **NOTE**: Users with [Chocolatey](https://chocolatey.org/) and run `choco install maven`
@@ -49,15 +52,18 @@
 
 ## Node.js
   1. Windows:
+
     - Download the windows installer for Node.js from the [Node.js website](https://nodejs.org/en/)
+
     - Run the installer (the .msi file downloaded in Step 1)
+
     - Accept the license agreement and all defaults and click install.
 
-    **Test the installed packages** (Restart your computer)
+  **Test the installed packages** (Restart your computer)
 
-    **Test Node**: open command prompt and type node -v .
+  **Test Node**: open command prompt and type node -v .
 
-    **Test NPM**: In command prompt, type npm -v.
+  **Test NPM**: In command prompt, type npm -v.
 
   2. Mac:
   ```bash
@@ -73,14 +79,18 @@
   Install mongodb from [here](https://docs.mongodb.com/manual/installation/)
   1. Windows:
     - Download the windows installer for MongoDB from [MongoDB Download Center](https://www.mongodb.com/download-center/community?_ga=2.235666241.1559492448.1525556338-1618931155.1525556338)
+
     - Run the installer (the .msi file downloaded in Step 1)
+
     - Accept the license agreement and all defaults and click install. You may install MongoDB in any folder (For example: C:\Program Files\).
+
     - Create a directory named “db” using the command `> mkdir \data\db` All the Mongo data files will be saved to this directory. Make sure this directory has write permissions
+
     - Add bin to Environment PATH
   2. Mac: `brew install mongodb`
 
   Operate MongoDB with [manual](https://docs.mongodb.com/manual/)
-  
+
   **Start a Mongo Server**: `mongod --dbpath={your db path} --port={your port usually 27100}` example: `mongod --dbpath=C:\mongodb\db --port=27100`
 
   **Connect to MongoDB**: `mongo --port=...`
