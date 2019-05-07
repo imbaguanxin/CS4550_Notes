@@ -10,24 +10,26 @@
 
 ### On Windows:
 
-  1. View advanced system settings (through search or control panel)
+  1. Unpack/install the archive just downloaded and store it to a place where you like.
 
-  2. Go to Advanced tab and click on Environment Variables
+  1. View advanced system settings (through search or control panel).
+
+  2. Go to Advanced tab and click on Environment Variables.
 
   3. Find `Path`, click on **edit**, then click on **New**.
 
   4. add the `bin` directory to the path. Path example: `C:\Program Files\apache-maven-3.6.0\bin`
 
-  **NOTE**: Users with [Chocolatey](https://chocolatey.org/) and run `choco install maven`
+  **NOTE**: Users with [Chocolatey](https://chocolatey.org/) may run `choco install maven` in command line tools.
 
 ### On Mac:
 
-  Unzip the file and add the `bin` directory to `PATH`. To permenantly change the path variable: change `your_user_name\bash_profile`. Add a line:`export PATH={your Maven directory}/bin:$PATH`
+  Unzip the file and add the `bin` directory to `PATH`. To permenantly change the path variable: change `your_user_name\.bash_profile`. Add a line:`export PATH={your Maven directory}/bin:$PATH`
 
-  User with homebrew: `brew install maven`
+  User with homebrew: run `brew install maven` in terminal
 
 ### On Linux:
-  `sudo apt-get install maven`
+  run `sudo apt-get install maven` in terminal
 
 ## Set Up Heroku
   1. create a free account [here](https://www.heroku.com/)
@@ -36,14 +38,16 @@
 ## Set Up Spring Boot
   Install the Spring CLI as described in the [documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html#getting-started-installing-the-cli).
 
-### On Mac:
+### Alternative way On Mac:
+  run following script in terminal
   ```bash
   $ brew tap pivotal/tap
   $ brew install springboot
   ```
   If you don't have brew, then install with `$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
 
-### On Windows: Install with [Scoop](https://scoop.sh/)
+### Alternative way On Windows: 
+  **Install with [Scoop](https://scoop.sh/)**
   ```bash
   > scoop bucket add extras
   > scoop install springboot
@@ -56,11 +60,11 @@
 ## Set Up Node.js
 ### Windows:
 
-  - Download the windows installer for Node.js from the [Node.js website](https://nodejs.org/en/)
+  1. Download the windows installer for Node.js from the [Node.js website](https://nodejs.org/en/)
 
-  - Run the installer (the .msi file downloaded in Step 1)
+  2. Run the installer (the .msi file downloaded in Step 1)
 
-  - Accept the license agreement and all defaults and click install.
+  3. Accept the license agreement and all defaults and click install.
 
   **Test the installed packages** (Restart your computer)
 
@@ -92,7 +96,8 @@
 
   5. Add bin to Environment PATH
 
-### Mac: `brew install mongodb`
+### Suggested way on Mac: 
+  Run `brew install mongodb` in terminal
 
   Operate MongoDB with [manual](https://docs.mongodb.com/manual/)
 
