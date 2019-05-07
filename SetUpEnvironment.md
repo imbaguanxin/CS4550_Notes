@@ -91,10 +91,10 @@
   2. Run the installer (the .msi file downloaded in Step 1)
 
   3. Accept the license agreement and all defaults and click install. You may install MongoDB in any folder (For example: C:\Program Files\).
+  
+  5. Add `bin` to Environment `PATH`
 
   4. Create a directory named “db” using the command `> mkdir \data\db` All the Mongo data files will be saved to this directory. Make sure this directory has write permissions
-
-  5. Add bin to Environment PATH
 
 ### Suggested way on Mac: 
   Run `brew install mongodb` in terminal
