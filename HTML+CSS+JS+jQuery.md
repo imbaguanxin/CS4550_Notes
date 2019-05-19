@@ -3,7 +3,7 @@
 ## HTML
 HTML = Hypertext Markup Language
 
-1. Headings
+### Headings
 
   Use headings as titles to introduce distinct sections. Headings come in 6 sizes starting with `h1`, `h2`, through `h6`. `h1` is the largest size, `h6` is the smallest
 ``` HTML
@@ -12,7 +12,7 @@ HTML = Hypertext Markup Language
 <h6>This is the smallest heading</h6>
 ```
 
-2. Paragraphs
+### Paragraphs
 
   Use paragraphs `p` to add long portions of text Paragraphs add vertical spacing between portions of text
 ``` HTML
@@ -22,7 +22,7 @@ ever since the 1500s, when an unknown printer took a galley of type
 and scrambled it to make a type specimen book</p>
 ```
 
-3. Lists
+### Lists
 
   unordered list - `ul`, ordered list - `ol`, list item = `li`
 ``` HTML
@@ -41,7 +41,7 @@ and scrambled it to make a type specimen book</p>
 </ol>
 ```
 
-4. Tables
+### Tables
 
   Use tables to display tabular data, their intended purpose, e.g. ,each row is a record, each column has same data types. Do not use tables to layout content. Use `div` and CSS instead
 ```HTML
@@ -71,7 +71,7 @@ and scrambled it to make a type specimen book</p>
 
   Add attributes `rowspan=` or `colspan=` in `tr` expands the item to take up more than 1 space. `rowspan=2` means takes up 2 row, `colspan=3` means takes up 3 columns.
 
-5. Input fields and labels
+### Input fields and labels
 
   Attribute `for="usernameFld"` under `label` bounds this particular label with an input whose id is __usernameFld__. As a result, the action of clicking the lable is regared as clicking the input.
 
@@ -122,7 +122,7 @@ and scrambled it to make a type specimen book</p>
   Attribute `type="date"` helps display a date selector.
 
   Outcome:
-  
+
   <HTML>
   <label for="dobFld">
     Date of Birth
