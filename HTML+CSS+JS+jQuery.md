@@ -53,24 +53,82 @@ and scrambled it to make a type specimen book</p>
   In both `thead` and `tbody`, we build up rows with `tr`. Under `tr` we use `td` to refer to each item
 ```HTML
 <table border="1">
-<thead>
-<tr>
-<th>Username</th><th>Password</th><th>First Name</th>
-<th>&nbsp;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alice</td> <td>*****</td> <td>Alice</td>
-<td>Wonderland</td> <td>Student</td> <td>Edit | Remove</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Username</th><th>Password</th><th>First Name</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>alice</td> <td>*****</td> <td>Alice</td>
+      <td>Wonderland</td> <td>Student</td> <td>Edit | Remove</td>
+    </tr>
+  </tbody>
 </table>
 ```
   `&nbsp;` allows you to create multiple spaces that are visible on a web page and not only in the source code.
 
-  Add attributes `rowspan=` or `colspan=` in `tr` expands the item to take up more than 1 space. `rowspan=2` means takes up 2 row, `colspan=3` means takes up 3 columns. 
+  Add attributes `rowspan=` or `colspan=` in `tr` expands the item to take up more than 1 space. `rowspan=2` means takes up 2 row, `colspan=3` means takes up 3 columns.
 
+5. Input fields and labels
 
+  Attribute `for="usernameFld"` under `label` bounds this particular label with an input whose id is __usernameFld__. As a result, the action of clicking the lable is regared as clicking the input.
 
-5.
+```HTML
+<label for="usernameFld">
+  Username
+</label>
+<input id="usernameFld"
+  type="text"
+  title="Username"
+  placeholder="alice" />
+
+<label for="firstNameFld">
+  First Name
+</label>
+<input
+  id="firstNameFld"
+  value="Alice" />
+```
+  Outcome:
+
+  <HTML>
+  <label for="usernameFld">
+    Username
+  </label>
+  <input id="usernameFld"
+    type="text"
+    title="Username"
+    placeholder="alice" />
+
+  <label for="firstNameFld">
+    First Name
+  </label>
+  <input
+    id="firstNameFld"
+    value="Alice" />
+  </HTML>
+
+```HTML
+<label for="dobFld">
+  Date of Birth
+</label>
+<input
+  type="date"
+  id="dobFld"
+  value="2011-11-22" />
+```
+  Attribute `type="date"` helps display a date selector.
+
+  Outcome:
+  
+  <HTML>
+  <label for="dobFld">
+    Date of Birth
+  </label>
+  <input
+    type="date"
+    id="dobFld"
+    value="2011-11-22" />
+  <HTML>
