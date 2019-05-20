@@ -91,25 +91,7 @@ and scrambled it to make a type specimen book</p>
   id="firstNameFld"
   value="Alice" />
 ```
-  Outcome:
-
-  <HTML>
-  <label for="usernameFld">
-    Username
-  </label>
-  <input id="usernameFld"
-    type="text"
-    title="Username"
-    placeholder="alice" />
-
-  <label for="firstNameFld">
-    First Name
-  </label>
-  <input
-    id="firstNameFld"
-    value="Alice" />
-  </HTML>
-
+Attribute `type="date"` helps display a date selector.
 ```HTML
 <label for="dobFld">
   Date of Birth
@@ -119,16 +101,81 @@ and scrambled it to make a type specimen book</p>
   id="dobFld"
   value="2011-11-22" />
 ```
-  Attribute `type="date"` helps display a date selector.
 
-  Outcome:
+### Dropdowns with select
+```HTML
+<select name="role">
+  <option value="FACULTY">
+    Faculty
+  </option>
+  <option value="STUDENT">
+    Student
+    </option>
+  <option value="ADMIN">
+  Admin
+  </option>
+</select>
+```
 
-  <HTML>
-  <label for="dobFld">
-    Date of Birth
-  </label>
-  <input
-    type="date"
-    id="dobFld"
-    value="2011-11-22" />
-  <HTML>
+### BUTTONS, RADIOS & CHECKBOXES
+
+  buttons:
+
+```HTML
+<button type="button">
+  Delete
+</button>
+<button type="button">
+  Edit
+</button>
+<button type="submit">
+  Update
+</button>
+```
+
+Checkbox and radio buttons:
+```HTML
+<label>
+  <input name="b" type="checkbox"/> Tenured
+</label>
+<label>
+  <input name="a" type="radio"/> Yes
+</label>
+<label>
+  <input name="a" type="radio" checked/> No
+</label>
+```
+
+
+## JavaScript
+
+### fetch
+[Detailed Descrptions](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+#### Simplest fetch example:
+```JavaScript
+const url = 'http://example.com/movies.json'
+fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function (myJson){
+    console.log(JSON.stringify(myJson))
+  })
+```
+This example returns a json object from given url.
+
+#### Uploading JSON data:
+```JavaScript
+const url = 'http://example.com/profile'
+const jsonData = {username : 'example'}
+fetch(url, {
+  method: 'POST', // or 'PUT'
+  body: JSON.stringify(jsonData)
+  headers : {
+    'content-type' : 'application/json'
+    }
+  }).then(function (response){
+    return response.json())
+  })
+```
